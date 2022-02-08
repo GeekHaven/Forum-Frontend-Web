@@ -1,3 +1,8 @@
+# Forum-Frontend-Web
+
+It is a discussion forum designed for the students of IIITA to ask questions, share their experiences and to know what their peeps are up to.
+<hr>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
