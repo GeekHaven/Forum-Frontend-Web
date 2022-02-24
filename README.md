@@ -11,11 +11,18 @@ It is a discussion forum designed for the students of IIITA to ask questions, sh
 - Don't forget to look out for Special Instructions that might be mentioned in the issue description. :wink:
 - After spending another sleepless night to see your pr getting merged it's enjoy that "I love Programming" feeling! :star_struck: :beers: 
 
+<hr>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
+Get the Dependencies
 
-First, run the development server:
+```bash
+npm i
+```
+
+Run the development server:
 
 ```bash
 npm run dev
