@@ -12,13 +12,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* //navbar */}
-      <nav>
         <div className="logo">
-          <h1>Forum</h1>
+            <h1>Forum</h1>
         </div>
+      <nav>
+
         <Link href="#about"><a>About</a></Link>
         <Link href="#topposts"><a>Organizations</a></Link>
         <Link href="#contactUs"><a>Contact Us</a></Link>
+          <div className="animation start-home"></div>
       </nav>
 
       {/* main */}
