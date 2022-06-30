@@ -1,0 +1,266 @@
+.container {
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80vh min-content min-content min-content;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  background-image: linear-gradient(#0e0e4698, #0e0e46b7),
+    url(../img/mclaren.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content min-content min-content;
+  position: relative;
+  color: #fff;
+}
+
+.nav {
+  grid-column: 2 / -2;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 3rem 0;
+}
+
+.nav__link ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav__link ul li a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.hero__caption {
+  grid-column: 2 / -2;
+  margin: 0 auto;
+}
+
+.fservice {
+  grid-column: 3 / -3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  bottom: -12rem;
+  background-color: #efefef;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.7rem 1rem 3rem #3a3a3a56;
+  color: initial;
+  text-align: center;
+  column-gap: 1rem;
+}
+
+.about {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content max-content;
+  padding-top: 10rem;
+}
+
+article {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+article h2 {
+  text-align: center;
+}
+
+aside {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  background-color: #efefef;
+  padding: 5rem 0;
+  column-gap: 3rem;
+}
+
+.about__detail {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 0;
+  column-gap: 3rem;
+}
+
+.about__card {
+  grid-column: 2 / 7;
+}
+
+.about__card__caption {
+  grid-column: 7 / -2;
+}
+
+.about__detail {
+  grid-row: 2 / -2;
+}
+
+.services {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 2rem;
+  padding: 15rem 0;
+  background-image: linear-gradient(
+      to top right,
+      #0e0e4698,
+      #313133b7,
+      #0e0e46b7
+    ),
+    url(../img/mclaren.png);
+  color: white;
+}
+
+.service__item {
+  text-align: justify;
+  background-color: #efefefb7;
+  color: initial;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.service__item header {
+  padding-bottom: 0.2rem;
+}
+
+.service__caption {
+  text-align: center;
+  margin-top: 0;
+}
+
+.service__content {
+  padding: 1rem;
+  margin: 0;
+}
+
+.service__img {
+  width: 100%;
+}
+
+.service__item--1 {
+  grid-column: 2 / span 3;
+}
+
+.service__item--2 {
+  grid-column: 5 / span 4;
+  transform: scaleY(1.3);
+}
+
+.service__item--3 {
+  grid-column: 9 / -2;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 0;
+  background-color: #0e0e46;
+  color: white;
+}
+
+.footer__brand {
+  grid-column: 2 / span 3;
+}
+
+.hnav {
+  grid-column: 6 / span 2;
+}
+
+.function {
+  grid-column: 9 / 12;
+}
+
+@media screen and (max-width: 910px) {
+  .service__item--1 {
+    grid-column: 2 / span 5;
+  }
+
+  .service__item--2 {
+    grid-column: 7 / span 5;
+    transform: scaleY(1);
+  }
+  .service__item--3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  aside {
+    column-gap: 2rem;
+  }
+  .card--1 {
+    grid-column: 2 / span 5;
+  }
+
+  .card--2 {
+    grid-column: 7 / -2;
+  }
+
+  .card--3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .about__detail {
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 2rem;
+    text-align: center;
+  }
+
+  .about__card {
+    grid-column: 4 / -4;
+  }
+
+  .about__card__caption {
+    grid-column: 2 / -2;
+  }
+
+  .overlay__img {
+    position: relative;
+    left: 0;
+    width: 50rem;
+  }
+
+  .overlay__img:not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .container {
+    grid-template-rows: 60vh min-content min-content min-content;
+  }
+
+  .fservice {
+    display: none;
+  }
+
+  .about {
+    padding: 5rem 0 0 0;
+  }
+
+  article {
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .fservice {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fservice__item:last-child {
+    display: none;
+  }
+}

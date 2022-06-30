@@ -1,0 +1,58 @@
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+  column-gap: 2rem;
+}
+
+.banner__area {
+  background-image: linear-gradient(#0e0e4698, #0e0e46b7),
+    url(../img/mclaren.png);
+  background-size: cover;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, min-content);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.form__header {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.form__item {
+  grid-column: 3 / -3;
+  margin: 0.7rem 0;
+  overflow: hidden;
+}
+
+.form__group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  padding: 1rem 1rem;
+  border: none;
+  border-bottom: 0.2rem solid #3a3a3a;
+  width: 100%;
+}
+
+input:focus {
+  border-bottom: 0.2rem solid #0e0e46;
+}
+
+div.form__group input {
+  width: 45%;
+}
+
+::placeholder {
+  text-transform: uppercase;
+  font-size: 1rem;
+}

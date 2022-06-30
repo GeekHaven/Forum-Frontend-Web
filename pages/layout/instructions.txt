@@ -1,0 +1,9 @@
+- build registratin page
+- download images / icons
+- insert into project foulder
+- work on the backend of the project and make sure it works perfectily
+- perfece the user interface and inser contents into it
+- merge user interface and backend
+- test everything and remove all bugs
+- submit project to the owner.
+- i have to deliver the man's work this week. 
